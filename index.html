@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-<meta charset="utf-8">
-<title>Introduction to JavaScript</title>
-</head>
-<body>
-<h1>JavaScript　入門</h1>
-<p>ボタンをクリックすると日時を表示します。</p>
-<button onclick="dateFunction2()">日時を表示</button>
-<p id="date002">ここに２０１７年８月８日の日付が表示されます。</p>
-<script>
-function dateFunction2() {
-//日付オブジェクトの作成
-var date2 = new Date().toLocaleString({ timeZone: 'Asia/Tokyo' });
-//段落タグの中身を"date2"で置き換える
-var pelem002 = document.getElementById("date002");
-pelem002.innerHTML = date2;
-}
-</script>
-</body>
+
+	<head>
+		<meta charset="utf-8">
+		<title>テストサイト</title>
+	</head>
+
+	<body>
+
+		<h1>JSで時刻表示</h1>
+		<p>ボタンをクリックすると日時を表示するよ</p>
+		<button onclick="dateFunction2()">日時を表示</button>
+		<p id="date002">ここに２０１７年８月８日の日付が表示されます。</p>
+
+		<script>
+			function dateFunction() {
+				//日付用のオブジェクトの作成します。
+				var date = new Date().toLocaleString({ timeZone: 'Asia/Tokyo' });
+				//段落タグの中身を"date"で置き換える
+				var pelem = document.getElementById("date");
+				pelem.innerHTML = date;
+			}
+		</script>
+
+	</body>
+
 </html>
