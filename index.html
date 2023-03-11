@@ -1,27 +1,22 @@
 <!DOCTYPE html>
-
 <html lang="ja">
-	<head>
-		<meta charset="utf-8">
-      	<title>web-r1</title>
-	</head>
-	
-	<script>
-    	function altRan2() {
-		var r = Math.floor(Math.random() * 10) +1; //乱数の発生
-    	document.getElementById("sai").innerHTML = r; //値の出力
-	</script>
-
-    
-    
-  <body>
-	Webアプリですよ！！
-	VSCODE
-	少し変更
-	  
-	  <form>
-  		<input type="button" value="10面サイコロ" onClick="altRan2()">
-		<span id="sai">-</span>
-	  </form> 
-  </body>
+<head>
+<meta charset="utf-8">
+<title>Introduction to JavaScript</title>
+</head>
+<body>
+<h1>JavaScript　入門</h1>
+<p>ボタンをクリックすると日時を表示します。</p>
+<button onclick="dateFunction2()">日時を表示</button>
+<p id="date002">ここに２０１７年８月８日の日付が表示されます。</p>
+<script>
+function dateFunction2() {
+//日付オブジェクトの作成
+var date2 = new Date(1502118000000);
+//段落タグの中身を"date2"で置き換える
+var pelem002 = document.getElementById("date002");
+pelem002.innerHTML = date2;
+}
+</script>
+</body>
 </html>
